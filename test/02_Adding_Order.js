@@ -4,7 +4,7 @@ var version;
 var orderBookLength;
 
 contract('Order Matching', function(accounts) {
-    it("test of the Order Matching contract: deployed", function() {
+    it("test of the Order Matching contract: adding order", function() {
         return OM.deployed().then(function(instance) {
             OMInstance = instance;
             return OMInstance.version({from: accounts[0]});             
