@@ -1,10 +1,10 @@
 pragma solidity ^0.4.23;
 import "./OrderMatchingAbstract.sol";
 
-// matching exaxt orders
-contract OrderMatchingSimple is OrderMatchingAbstract {
+// matching partial orders
+contract OrderMatchingPartial is OrderMatchingAbstract {
 
-   string public version = "OM.Simple.0.0.1";
+   string public version = "OM.Partial.0.0.1";
 
    //Constructor
    constructor(){
