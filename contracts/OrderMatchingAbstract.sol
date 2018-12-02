@@ -52,6 +52,26 @@ contract OrderMatchingAbstract {
         _asset = orderBook[index].asset;
     }
 
+    // getting only amount
+    function getOrderAmount(uint index) view public returns (uint _amount) {
+        _amount = orderBook[index].amount;
+    }
+
+    // getting only price
+    function getOrderPrice(uint index) view public returns (uint _price) {
+        _price = orderBook[index].price;
+    }
+
+    // getting asset type
+    function getOrderAsset(uint index) view public returns (string _asset) {
+        _asset = orderBook[index].asset;
+    }
+
+    // getting buyOrSell
+    function getOrderBuyOrSell(uint index) view public returns (bool _buyOrSell) {
+        _buyOrSell = orderBook[index].buyOrSell;
+    }
+
     // returning the size of the order book
     function getOrderBookLenght() view returns (uint){
         return orderBook.length;

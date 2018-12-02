@@ -43,7 +43,7 @@ contract OrderMatchingPartial is OrderMatchingAbstract {
                             }
                             // partial matching: case - more buy than sell
                             else if (orderBook[actualBuyOrderIndex].amount > orderBook[actualSellOrderIndex].amount) {
-                                uint amountBuy = orderBook[actualBuyOrderIndex].amount - orderBook[actualSellOrderIndex].amount;
+                                uint amountBuy = orderBook[actualSellOrderIndex].amount;
 
                                 //MATCHING
                                 // Event
@@ -62,7 +62,7 @@ contract OrderMatchingPartial is OrderMatchingAbstract {
                             }               
                             // partial matching: case - more sell  than buy
                             else if (orderBook[actualBuyOrderIndex].amount < orderBook[actualSellOrderIndex].amount) {
-                            uint amountSell = orderBook[actualSellOrderIndex].amount - orderBook[actualBuyOrderIndex].amount;
+                            uint amountSell = orderBook[actualBuyOrderIndex].amount;
                        
                                 //MATCHING
                                 // Event
