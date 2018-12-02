@@ -1,10 +1,10 @@
 pragma solidity ^0.4.23;
 import "./OrderMatchingAbstract.sol";
 
-// matching partial orders
-contract OrderMatchingPartial is OrderMatchingAbstract {
+// matching exaxt orders
+contract OrderMatchingSimple is OrderMatchingAbstract {
 
-   string public version = "OM.Partial.0.0.1";
+   string public version = "OM.Simple.0.0.1";
 
    //Constructor
    constructor(){
@@ -21,21 +21,25 @@ contract OrderMatchingPartial is OrderMatchingAbstract {
                 	// matching asset type 
                   	if (sha256(orderBook[actualBuyOrderIndex].asset) == sha256(orderBook[actualSellOrderIndex].asset)) {       
                         // matching amount
-	                  	if (orderBook[actualBuyOrderIndex].price >= orderBook[actualSellOrderIndex].price) {
-                            //MATCHING
-                            // Event
-                            emit OrderMatch(orderBook[actualBuyOrderIndex].amount,
-                             orderBook[actualBuyOrderIndex].price,
-                              orderBook[actualBuyOrderIndex].asset,
-                              orderBook[actualSellOrderIndex].amount,
-                              orderBook[actualSellOrderIndex].price,
-                              orderBook[actualSellOrderIndex].asset);
+	                  	if (orderBook[actualBuyOrderIndex].amount == orderBook[actualSellOrderIndex].amount) {
+                        {
+                            //matching price
+                            if (orderBook[actualBuyOrderIndex].price >= orderBook[actualSellOrderIndex].price) {
+                                //MATCHING
+                                // Event
+                                emit OrderMatch(orderBook[actualBuyOrderIndex].amount,
+                                orderBook[actualBuyOrderIndex].price,
+                                orderBook[actualBuyOrderIndex].asset,
+                                orderBook[actualSellOrderIndex].amount,
+                                orderBook[actualSellOrderIndex].price,
+                                orderBook[actualSellOrderIndex].asset);
 
-                            // Applying to state
+                                // Applying to state
 
-                            // Deleting the orders
-                            deleteOrder(actualBuyOrderIndex);
-                            deleteOrder(actualSellOrderIndex);
+                                // Deleting the orders
+                                deleteOrder(actualBuyOrderIndex);
+                                deleteOrder(actualSellOrderIndex);
+                            }
                         }                      	
                     }                  	
                 }      		
@@ -44,4 +48,4 @@ contract OrderMatchingPartial is OrderMatchingAbstract {
     }
 }
 }
-
+}
