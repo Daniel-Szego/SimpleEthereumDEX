@@ -10,7 +10,7 @@ var thirdEventMatch;
 var fourthEventMatch;
 
 contract('Order Matching', function(accounts) {
-    it("test of the Order Matching contract: simple matching", function() {
+    it("test of the Order Matching contract: partial matching", function() {
         return OM.deployed().then(function(instance) {
             OMInstance = instance;
             return OMInstance.version({from: accounts[0]});             
