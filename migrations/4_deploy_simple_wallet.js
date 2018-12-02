@@ -1,5 +1,6 @@
 var WalletMultiAsset = artifacts.require("./WalletSimpleMultiAsset.sol");
+var nullAddress = "";
 
 module.exports = function(deployer) {
-  deployer.deploy(WalletMultiAsset);
+  deployer.deploy(WalletMultiAsset, nullAddress);
 };

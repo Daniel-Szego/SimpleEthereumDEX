@@ -92,7 +92,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 28,
-        "sourceUnit": 278,
+        "sourceUnit": 335,
         "src": "25:37:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -103,7 +103,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 28,
-        "sourceUnit": 284,
+        "sourceUnit": 718,
         "src": "63:30:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -174,7 +174,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+              "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
               "typeString": "contract OrderMatchingAbstract"
             },
             "typeName": {
@@ -182,10 +182,10 @@
               "id": 7,
               "name": "OrderMatchingAbstract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 277,
+              "referencedDeclaration": 334,
               "src": "165:21:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                 "typeString": "contract OrderMatchingAbstract"
               }
             },
@@ -202,7 +202,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_WalletAbstract_$283",
+              "typeIdentifier": "t_contract$_WalletAbstract_$717",
               "typeString": "contract WalletAbstract"
             },
             "typeName": {
@@ -210,10 +210,10 @@
               "id": 9,
               "name": "WalletAbstract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 283,
+              "referencedDeclaration": 717,
               "src": "213:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                "typeIdentifier": "t_contract$_WalletAbstract_$717",
                 "typeString": "contract WalletAbstract"
               }
             },
@@ -243,7 +243,7 @@
                       "referencedDeclaration": 8,
                       "src": "331:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                         "typeString": "contract OrderMatchingAbstract"
                       }
                     },
@@ -258,13 +258,13 @@
                       "referencedDeclaration": 12,
                       "src": "347:14:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                         "typeString": "contract OrderMatchingAbstract"
                       }
                     },
                     "src": "331:30:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                       "typeString": "contract OrderMatchingAbstract"
                     }
                   },
@@ -289,7 +289,7 @@
                       "referencedDeclaration": 10,
                       "src": "371:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                        "typeIdentifier": "t_contract$_WalletAbstract_$717",
                         "typeString": "contract WalletAbstract"
                       }
                     },
@@ -304,13 +304,13 @@
                       "referencedDeclaration": 14,
                       "src": "380:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                        "typeIdentifier": "t_contract$_WalletAbstract_$717",
                         "typeString": "contract WalletAbstract"
                       }
                     },
                     "src": "371:16:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                      "typeIdentifier": "t_contract$_WalletAbstract_$717",
                       "typeString": "contract WalletAbstract"
                     }
                   },
@@ -342,7 +342,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                    "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                     "typeString": "contract OrderMatchingAbstract"
                   },
                   "typeName": {
@@ -350,10 +350,10 @@
                     "id": 11,
                     "name": "OrderMatchingAbstract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 277,
+                    "referencedDeclaration": 334,
                     "src": "260:21:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                       "typeString": "contract OrderMatchingAbstract"
                     }
                   },
@@ -370,7 +370,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                    "typeIdentifier": "t_contract$_WalletAbstract_$717",
                     "typeString": "contract WalletAbstract"
                   },
                   "typeName": {
@@ -378,10 +378,10 @@
                     "id": 13,
                     "name": "WalletAbstract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 283,
+                    "referencedDeclaration": 717,
                     "src": "298:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                      "typeIdentifier": "t_contract$_WalletAbstract_$717",
                       "typeString": "contract WalletAbstract"
                     }
                   },
@@ -438,7 +438,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 28,
-        "sourceUnit": 278,
+        "sourceUnit": 335,
         "src": "25:37:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -449,7 +449,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 28,
-        "sourceUnit": 284,
+        "sourceUnit": 718,
         "src": "63:30:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -520,7 +520,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+              "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
               "typeString": "contract OrderMatchingAbstract"
             },
             "typeName": {
@@ -528,10 +528,10 @@
               "id": 7,
               "name": "OrderMatchingAbstract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 277,
+              "referencedDeclaration": 334,
               "src": "165:21:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                 "typeString": "contract OrderMatchingAbstract"
               }
             },
@@ -548,7 +548,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_WalletAbstract_$283",
+              "typeIdentifier": "t_contract$_WalletAbstract_$717",
               "typeString": "contract WalletAbstract"
             },
             "typeName": {
@@ -556,10 +556,10 @@
               "id": 9,
               "name": "WalletAbstract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 283,
+              "referencedDeclaration": 717,
               "src": "213:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                "typeIdentifier": "t_contract$_WalletAbstract_$717",
                 "typeString": "contract WalletAbstract"
               }
             },
@@ -589,7 +589,7 @@
                       "referencedDeclaration": 8,
                       "src": "331:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                         "typeString": "contract OrderMatchingAbstract"
                       }
                     },
@@ -604,13 +604,13 @@
                       "referencedDeclaration": 12,
                       "src": "347:14:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                        "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                         "typeString": "contract OrderMatchingAbstract"
                       }
                     },
                     "src": "331:30:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                       "typeString": "contract OrderMatchingAbstract"
                     }
                   },
@@ -635,7 +635,7 @@
                       "referencedDeclaration": 10,
                       "src": "371:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                        "typeIdentifier": "t_contract$_WalletAbstract_$717",
                         "typeString": "contract WalletAbstract"
                       }
                     },
@@ -650,13 +650,13 @@
                       "referencedDeclaration": 14,
                       "src": "380:7:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                        "typeIdentifier": "t_contract$_WalletAbstract_$717",
                         "typeString": "contract WalletAbstract"
                       }
                     },
                     "src": "371:16:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                      "typeIdentifier": "t_contract$_WalletAbstract_$717",
                       "typeString": "contract WalletAbstract"
                     }
                   },
@@ -688,7 +688,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                    "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                     "typeString": "contract OrderMatchingAbstract"
                   },
                   "typeName": {
@@ -696,10 +696,10 @@
                     "id": 11,
                     "name": "OrderMatchingAbstract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 277,
+                    "referencedDeclaration": 334,
                     "src": "260:21:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$277",
+                      "typeIdentifier": "t_contract$_OrderMatchingAbstract_$334",
                       "typeString": "contract OrderMatchingAbstract"
                     }
                   },
@@ -716,7 +716,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                    "typeIdentifier": "t_contract$_WalletAbstract_$717",
                     "typeString": "contract WalletAbstract"
                   },
                   "typeName": {
@@ -724,10 +724,10 @@
                     "id": 13,
                     "name": "WalletAbstract",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 283,
+                    "referencedDeclaration": 717,
                     "src": "298:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_WalletAbstract_$283",
+                      "typeIdentifier": "t_contract$_WalletAbstract_$717",
                       "typeString": "contract WalletAbstract"
                     }
                   },
@@ -763,5 +763,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-12-02T17:20:22.728Z"
+  "updatedAt": "2018-12-02T23:22:49.641Z"
 }

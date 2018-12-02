@@ -15,9 +15,22 @@ contract WalletSimpleMultiAsset {
     // multi asset balances
     mapping(address => Balance) public balances;
 
+    // DEX reference
+    address public DEX;
+
+    // Constructor
+    constructor (address _DEX){
+        DEX = _DEX;
+    }
+
     // MODIFIERS
     modifier isAddressOwner (address _address){
         require(msg.sender == _address);
+        _;
+    }
+
+    modifier isCallerDEX (){
+        require(msg.sender == DEX);
         _;
     }
 
@@ -32,9 +45,9 @@ contract WalletSimpleMultiAsset {
         return balances[_address].asset; 
     }
 
-    // ACTIVE FUNCTIONS
-    // mint asset - in this implementation only for demo
-    function mintAsset(address _address, uint _amount, string asset) isAddressOwner(_address) public returns (string){
+    // DIRECT USER FUNCTIONS
+    // mint asset - only DEX can mint assets
+    function mintAsset(address _address, uint _amount, string asset) isCallerDEX() public returns (string){
         balances[_address].amount =  balances[_address].amount + _amount;
         balances[_address].asset =  balances[_address].asset;
     }
@@ -44,10 +57,18 @@ contract WalletSimpleMultiAsset {
         if (bytes(balances[_address].asset).length > 0){
             require(sha256(balances[_address].asset) == sha256(balances[msg.sender].asset));
         }
+        require (balances[_address].amount > _amount);
         balances[_address].amount =  balances[_address].amount + _amount;
         balances[msg.sender].amount =  balances[msg.sender].amount - _amount;
     }
 
-
-
+    // transfer asset - do not use live, underflow and overflow attack
+    function transferAssetFrom(address _from, address _to, uint _amount) isCallerDEX() public returns (string){
+        if (bytes(balances[_to].asset).length > 0){
+            require(sha256(balances[_from].asset) == sha256(balances[_to].asset));
+        }
+        require (balances[_from].amount > _amount);
+        balances[_to].amount =  balances[_to].amount + _amount;
+        balances[_from].amount =  balances[_from].amount - _amount;
+    }
 }
