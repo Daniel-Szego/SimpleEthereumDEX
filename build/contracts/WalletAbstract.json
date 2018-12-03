@@ -18,22 +18,22 @@
   ],
   "bytecode": "0x60806040526040805190810160405280600c81526020017f57616c6c65742e302e302e3100000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b6101a0806101166000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806354fd4d5014610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b5050505050815600a165627a7a72305820d5d19324ca9821828bc82ac6f8bb75c3d1b0d96caa9e6299df86cb75de47a4c30029",
   "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806354fd4d5014610046575b600080fd5b34801561005257600080fd5b5061005b6100d6565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009b578082015181840152602081019050610080565b50505050905090810190601f1680156100c85780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561016c5780601f106101415761010080835404028352916020019161016c565b820191906000526020600020905b81548152906001019060200180831161014f57829003601f168201915b5050505050815600a165627a7a72305820d5d19324ca9821828bc82ac6f8bb75c3d1b0d96caa9e6299df86cb75de47a4c30029",
-  "sourceMap": "26:74:5:-;;;58:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;26:74;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:74:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "26:74:5:-;;;;;;;;;;;;;;;;;;;;;;;;58:38;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:38:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;58:38:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "sourceMap": "26:74:6:-;;;58:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;26:74;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:74:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "26:74:6:-;;;;;;;;;;;;;;;;;;;;;;;;58:38;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:38:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;58:38:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.23;\n\ncontract WalletAbstract {\n\n     string public version = \"Wallet.0.0.1\";\n\n}\n",
   "sourcePath": "/home/super/Eth/SimpleEthereumDEX/contracts/WalletAbstract.sol",
   "ast": {
     "absolutePath": "/home/super/Eth/SimpleEthereumDEX/contracts/WalletAbstract.sol",
     "exportedSymbols": {
       "WalletAbstract": [
-        717
+        734
       ]
     },
-    "id": 718,
+    "id": 735,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 713,
+        "id": 730,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +41,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:6"
       },
       {
         "baseContracts": [],
@@ -49,20 +49,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 717,
+        "id": 734,
         "linearizedBaseContracts": [
-          717
+          734
         ],
         "name": "WalletAbstract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 716,
+            "id": 733,
             "name": "version",
             "nodeType": "VariableDeclaration",
-            "scope": 717,
-            "src": "58:38:5",
+            "scope": 734,
+            "src": "58:38:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -70,10 +70,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 714,
+              "id": 731,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "58:6:5",
+              "src": "58:6:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -82,14 +82,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "57616c6c65742e302e302e31",
-              "id": 715,
+              "id": 732,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "82:14:5",
+              "src": "82:14:6",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_5ef87fdafb191d3587bbb1fa1b9648681695cbbdde93c86a47697cc3fb36a1e6",
@@ -100,24 +100,24 @@
             "visibility": "public"
           }
         ],
-        "scope": 718,
-        "src": "26:74:5"
+        "scope": 735,
+        "src": "26:74:6"
       }
     ],
-    "src": "0:101:5"
+    "src": "0:101:6"
   },
   "legacyAST": {
     "absolutePath": "/home/super/Eth/SimpleEthereumDEX/contracts/WalletAbstract.sol",
     "exportedSymbols": {
       "WalletAbstract": [
-        717
+        734
       ]
     },
-    "id": 718,
+    "id": 735,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 713,
+        "id": 730,
         "literals": [
           "solidity",
           "^",
@@ -125,7 +125,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:6"
       },
       {
         "baseContracts": [],
@@ -133,20 +133,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 717,
+        "id": 734,
         "linearizedBaseContracts": [
-          717
+          734
         ],
         "name": "WalletAbstract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 716,
+            "id": 733,
             "name": "version",
             "nodeType": "VariableDeclaration",
-            "scope": 717,
-            "src": "58:38:5",
+            "scope": 734,
+            "src": "58:38:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -154,10 +154,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 714,
+              "id": 731,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "58:6:5",
+              "src": "58:6:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -166,14 +166,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "57616c6c65742e302e302e31",
-              "id": 715,
+              "id": 732,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "82:14:5",
+              "src": "82:14:6",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_5ef87fdafb191d3587bbb1fa1b9648681695cbbdde93c86a47697cc3fb36a1e6",
@@ -184,11 +184,11 @@
             "visibility": "public"
           }
         ],
-        "scope": 718,
-        "src": "26:74:5"
+        "scope": 735,
+        "src": "26:74:6"
       }
     ],
-    "src": "0:101:5"
+    "src": "0:101:6"
   },
   "compiler": {
     "name": "solc",
@@ -196,5 +196,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-12-02T23:22:49.905Z"
+  "updatedAt": "2018-12-03T15:17:03.079Z"
 }

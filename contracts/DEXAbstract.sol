@@ -9,7 +9,13 @@ contract DEXAbstract {
     OrderMatchingAbstract public orderMatching;
     WalletAbstract public wallet;
 
-    constructor(OrderMatchingAbstract _orderMatching, WalletAbstract _wallet){
+    // default constructor - is it needed ?
+    constructor(){
+
+    }
+
+    // registering references
+    function RegisterReferences (OrderMatchingAbstract _orderMatching, WalletAbstract _wallet) public {
         orderMatching = _orderMatching;
         wallet = _wallet;
     }
