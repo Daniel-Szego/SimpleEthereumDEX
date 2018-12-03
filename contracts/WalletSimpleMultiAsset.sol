@@ -72,3 +72,4 @@ contract WalletSimpleMultiAsset {
         balances[_from].amount =  balances[_from].amount - _amount;
     }
 }
+
