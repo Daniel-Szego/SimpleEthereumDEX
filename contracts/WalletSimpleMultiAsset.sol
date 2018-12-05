@@ -47,17 +47,17 @@ contract WalletSimpleMultiAsset {
 
     // DIRECT USER FUNCTIONS
     // mint asset - only DEX can mint assets
-    function mintAsset(address _address, uint _amount, string asset) isCallerDEX() public returns (string){
+    function mintAsset(address _address, uint _amount, string _asset) isCallerDEX() public{
         balances[_address].amount =  balances[_address].amount + _amount;
-        balances[_address].asset =  balances[_address].asset;
+        balances[_address].asset =  _asset;
     }
 
     // transfer asset - do not use live, underflow and overflow attack
-    function transferAsset(address _address, uint _amount)  public returns (string){
+    function transferAsset(address _address, uint _amount)  public {
         if (bytes(balances[_address].asset).length > 0){
             require(sha256(balances[_address].asset) == sha256(balances[msg.sender].asset));
         }
-        require (balances[_address].amount > _amount);
+        require (balances[msg.sender].amount > _amount);
         balances[_address].amount =  balances[_address].amount + _amount;
         balances[msg.sender].amount =  balances[msg.sender].amount - _amount;
     }
