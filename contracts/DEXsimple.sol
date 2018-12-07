@@ -34,6 +34,10 @@ contract DEXSimple is DEXAbstract {
         wallet.mintAsset(_address, _value, _asset);        
     }
 
-
+    // transfer from admin call
+    function transferFrom(address _from, address _to, uint _amount)  public returns (string){
+        WalletSimpleMultiAsset wallet = WalletSimpleMultiAsset(walletAddress);
+        wallet.transferAssetFrom(_from,_to,_amount);
+    }
 
 }

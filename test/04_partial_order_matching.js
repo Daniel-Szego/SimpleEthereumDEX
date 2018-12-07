@@ -24,7 +24,6 @@ contract('Order Matching', function(accounts) {
             return OMInstance.getOrderBookLenght({from: accounts[0]});             
         }).then(function(result) {
             orderBookLength = result;
-            console.log(" - ");
             return OMInstance.addOrder(100,100,false,"ETH",{from: accounts[0]});             
         }).then(function(result) {
             firtsEventMatch = result.logs[0].event;
